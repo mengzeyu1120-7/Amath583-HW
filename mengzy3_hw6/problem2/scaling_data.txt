@@ -1,0 +1,6 @@
+n=100000000, L_numeric=6.16676, error=1.0417e-08, log10(error)=-7.98226, Time=0.693989s
+n=100000000, L_numeric=6.16676, error=1.04164e-08, log10(error)=-7.98228, Time=0.347658s
+n=100000000, L_numeric=6.16676, error=1.04167e-08, log10(error)=-7.98227, Time=0.185174s
+n=100000000, L_numeric=6.16676, error=1.04171e-08, log10(error)=-7.98225, Time=0.098138s
+n=100000000, L_numeric=6.16676, error=1.04168e-08, log10(error)=-7.98227, Time=0.0454219s
+n=100000000, L_numeric=6.16676, error=1.04167e-08, log10(error)=-7.98227, Time=0.0276423s
