@@ -1,0 +1,3 @@
+mpicc -c -I/mmfs1/sw/intel/oneAPI/2023.2.0.49440/mkl/2023.2.0/include/include kr-azeb.c 
+mpicc -o xkrazeb kr-azeb.o -L/mmfs1/sw/intel/oneAPI/2023.2.0.49440/mkl/2023.2.0/lib/intel64 -Wl,--start-group -lmkl_scalapack_lp64 -lmkl_blacs_intelmpi_lp64 -lmkl_intel_lp64 -lmkl_core -lmkl_sequential -Wl,--end-group -lpthread -lm -ldl
+

@@ -1,0 +1,6 @@
+echo "threaded transform"
+g++ -c -std=c++17 -I/gscratch/amath/roche-libs/include/libpng16/ cpp-png-gs.cpp;  
+g++ -c -std=c++17 -I/gscratch/amath/roche-libs/include/libpng16/ grayscaleThreaded.cpp
+g++ -o xcpp-png-gs cpp-png-gs.o grayscaleThreaded.o -L/gscratch/amath/roche-libs/lib/ -lpng -lm -pthread
+echo "correctness"
+g++ -c -std=c++17 -I/gscratch/amath/roche-libs/include/libpng16/ compare_png.cpp;  g++ -o xcompare_png compare_png.o -L/gscratch/amath/roche-libs/lib/ -lpng -lm -pthread
